@@ -18,7 +18,7 @@ from mpl_toolkits.axes_grid1 import make_axes_locatable
 
 from swiftsimio import load
 from swiftsimio.visualisation.projection import project_pixel_grid, project_gas
-from swiftsimio.visualisation.smoothing_length_generation import (
+from swiftsimio.visualisation.smoothing_length.generate import (
     generate_smoothing_lengths,
 )
 
