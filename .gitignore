@@ -1,5 +1,7 @@
+venv
 *~
 *.hdf5
+*.hdf5.[0-9]*
 *.dirstamp
 
 Makefile
@@ -37,6 +39,7 @@ examples/*/*/*.mp4
 examples/*/*/*.txt
 examples/*/*/*.rst
 examples/*/*/*.hdf5
+examples/*/*/*.hdf5.[0-9]*
 examples/*/*/*.csv
 examples/*/*/*.dot
 examples/*/*/cell_hierarchy.html
