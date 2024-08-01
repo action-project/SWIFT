@@ -32,6 +32,8 @@ Statistics:
 # Parameters controlling restarts
 Restarts:
     enable: 1                           # Whether to enable dumping restarts at fixed intervals.
+    save: 1
+    delta_hours: 0.024
 
 # Parameters for the hydrodynamics scheme
 SPH:
