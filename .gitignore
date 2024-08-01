@@ -1,4 +1,5 @@
 venv
+used_parameters.yml*
 *~
 *.hdf5
 *.hdf5.[0-9]*
