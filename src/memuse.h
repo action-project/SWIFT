@@ -21,7 +21,7 @@
 
 /* Config parameters. */
 #include <config.h>
-
+#include <malloc.h>
 /* Includes. */
 #include <stdlib.h>
 
@@ -59,6 +59,9 @@ __attribute__((always_inline)) inline void swift_ignore_leak(
 /* No-op when not checking for leaks. */
 #define swift_ignore_leak(memptr)
 #endif
+
+#define posix_memalign(p, a, s) (((*(p)) = _aligned_malloc((s), (a))), *(p) ?0 :errno)
+#define free _aligned_free
 
 /**
  * @brief allocate aligned memory. The use and results are the same as the
