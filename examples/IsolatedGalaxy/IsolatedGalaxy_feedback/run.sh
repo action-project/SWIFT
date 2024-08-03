@@ -33,7 +33,7 @@ fi
 ../../../swift --threads=16 --feedback --external-gravity --self-gravity --stars --star-formation --cooling --hydro --limiter --sync isolated_galaxy.yml 2>&1 | tee output.log
 
 # Kennicutt-Schmidt law plot
-python3 plotSolution.py 100
+python3 plotSolution.py 98
 
 # Plot that the random star formation matches the expected SFH
 python3 SFH.py
