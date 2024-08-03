@@ -24,7 +24,7 @@
 
 /* System includes. */
 // TODO-shree
-#include <sys/times.h>
+// #include <sys/times.h>
 
 /* Local includes */
 #include "cycle.h"
@@ -53,7 +53,7 @@ double clocks_diff_ticks(ticks tic, ticks toc);
 const char *clocks_get_timesincestart(void);
 double clocks_get_hours_since_start(void);
 
-void clocks_get_cputimes_used(double *usertime, double *systime);
+// void clocks_get_cputimes_used(double *usertime, double *systime);
 int clocks_random_seed(void);
 
 const char *clocks_now(int swift);

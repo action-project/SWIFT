@@ -2697,11 +2697,11 @@ int engine_step(struct engine *e) {
   }
 
   /* Get current CPU times.*/
-#ifdef WITH_MPI
-  double start_usertime = 0.0;
-  double start_systime = 0.0;
-  clocks_get_cputimes_used(&start_usertime, &start_systime);
-#endif
+// #ifdef WITH_MPI
+//   double start_usertime = 0.0;
+//   double start_systime = 0.0;
+//   clocks_get_cputimes_used(&start_usertime, &start_systime);
+// #endif
 
   /* Write the dependencies */
   if (e->sched.frequency_dependency != 0 &&
@@ -2726,13 +2726,13 @@ int engine_step(struct engine *e) {
   TIMER_TOC(timer_runners);
 
   /* Now record the CPU times used by the tasks. */
-#ifdef WITH_MPI
-  double end_usertime = 0.0;
-  double end_systime = 0.0;
-  clocks_get_cputimes_used(&end_usertime, &end_systime);
-  e->usertime_last_step = end_usertime - start_usertime;
-  e->systime_last_step = end_systime - start_systime;
-#endif
+// #ifdef WITH_MPI
+//   double end_usertime = 0.0;
+//   double end_systime = 0.0;
+//   clocks_get_cputimes_used(&end_usertime, &end_systime);
+//   e->usertime_last_step = end_usertime - start_usertime;
+//   e->systime_last_step = end_systime - start_systime;
+// #endif
 
 #ifdef SWIFT_HYDRO_DENSITY_CHECKS
   /* Run the brute-force hydro calculation for some parts */

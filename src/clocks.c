@@ -290,12 +290,12 @@ double clocks_get_hours_since_start(void) {
  * @param usertime the user time.
  * @param systime the system time.
  */
-void clocks_get_cputimes_used(double *usertime, double *systime) {
-  struct tms tmstic;
-  times(&tmstic);
-  *usertime = (tmstic.tms_utime + tmstic.tms_cutime);
-  *systime = (tmstic.tms_stime + tmstic.tms_cstime);
-}
+// void clocks_get_cputimes_used(double *usertime, double *systime) {
+//   struct tms tmstic;
+//   times(&tmstic);
+//   *usertime = (tmstic.tms_utime + tmstic.tms_cutime);
+//   *systime = (tmstic.tms_stime + tmstic.tms_cstime);
+// }
 
 /**
  * @brief Return an integer based on the current time.
