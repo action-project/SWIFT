@@ -598,7 +598,7 @@ INLINE static void star_formation_copy_properties(
   sp->chemistry_data = p->chemistry_data;
 
   /* Store the tracers data */
-  sp->tracers_data = xp->tracers_data;
+  // sp->tracers_data = xp->tracers_data;
 
   /* Store the birth density in the star particle */
   sp->birth_density = hydro_get_physical_density(p, cosmo);
